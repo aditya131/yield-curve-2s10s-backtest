@@ -22,3 +22,9 @@ First, install the required packages:
 
 ```bash
 pip install pandas numpy matplotlib scipy
+
+## 👤 Author
+
+**Aditya Agarwal**  
+Quantitative trader and fixed‑income enthusiast  
+[LinkedIn](https://www.linkedin.com/in/aditya3005) | [Email](adityaagarwal3000@gmail.com)
