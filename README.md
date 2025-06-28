@@ -20,7 +20,7 @@ This project backtests a yield curve steepener/flattener strategy using the 2s10
 ## 🛠 Requirements & Setup
 First, install the required packages:
 
-```bash
+bash
 pip install pandas numpy matplotlib scipy
 
 ## 👤 Author
