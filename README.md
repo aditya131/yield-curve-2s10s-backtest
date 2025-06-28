@@ -1,10 +1,10 @@
 # Yield Curve 2s10s Steepener Strategy
 
 ## 📌 Overview
-This project backtests a yield curve steepener/flattener strategy using the 2s10s slope constructed from front SOFR futures. The strategy uses z-score signals for entry/exit and scales exposure by DV01.
+This strategy backtests 2s10s curve trades using interpolated yield data for 2-year and 10-year Treasury points. The strategy uses z-score signals for entry/exit and scales exposure by DV01.
 
 ## 📈 Methodology
-- Construct the 2s10s curve using front SOFR futures  
+- Construct the 2s10s curve using yield data for 2-year and 10-year Treasury points 
 - Compute z-scores of the slope to trigger trades  
 - Enter long (steepener) or short (flattener) positions based on threshold crossings  
 - Scale trade exposure dynamically using DV01  
