@@ -25,5 +25,5 @@ pip install pandas numpy matplotlib scipy
 ## 👤 Author
 
 **Aditya Agarwal**  
-Quantitative trader and fixed‑income enthusiast  
+Quantitative trader exploring fixed income and equity strategies
 [LinkedIn](https://www.linkedin.com/in/aditya3005) | [Email](adityaagarwal3000@gmail.com)
