@@ -1,26 +1,24 @@
-Yield Curve 2s10s Steepener Backtest
+# Yield Curve 2s10s Steepener Strategy
 
-📌 Overview
-A simple statistical backtest of a 2s10s yield curve steepener strategy using U.S. Treasury futures. The strategy relies on z-score thresholds, DV01 scaling, and curve slope dynamics.
+## 📌 Overview
+This project backtests a yield curve steepener/flattener strategy using the 2s10s slope constructed from front SOFR futures. The strategy uses z-score signals for entry/exit and scales exposure by DV01.
 
-🛠️ Methodology
-- Constructed 2s10s curve using front SOFR futures
-- Calculated z-scores of slope
-- Entered steepener/flatteners based on thresholds
-- Scaled position based on DV01
-- PnL backtested over historical futures prices
+## 📈 Methodology
+- Construct the 2s10s curve using front SOFR futures  
+- Compute z-scores of the slope to trigger trades  
+- Enter long (steepener) or short (flattener) positions based on threshold crossings  
+- Scale trade exposure dynamically using DV01  
+- Generate cumulative PnL and Sharpe ratio  
+- Plot strategy signals, slope evolution, and performance
 
-📈 Output
-- Performance metrics (cumulative PnL, Sharpe)
-- Z-score plots and trade entry/exit visuals
+## 🗂 Files
+- `2s10s.ipynb`: Main backtest notebook  
+- `2s10s_with_macro.ipynb`: Extended version with macro overlay  
+- `2s10s_data.csv`: Historical 2s10s slope data  
+- `README.md`: This file
 
-📂 Files
-- `2s10s.ipynb`: Main notebook with full strategy
-- `2s10s_data/`: Sample or placeholder data
+## 🛠 Requirements & Setup
+First, install the required packages:
 
-✅ Requirements
 ```bash
-pandas
-numpy
-matplotlib
-scipy
+pip install pandas numpy matplotlib scipy
